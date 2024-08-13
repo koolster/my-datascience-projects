@@ -130,6 +130,21 @@ d-----src  (python files constituting the end-to-end ML pipeline in .py format) 
 -a----requirements.txt </br>
 -a----run.sh  </br> 
 
+    my-datascience-projects/
+    ├── .github/
+    ├── data/
+    ├── env/
+    ├── output/
+    ├── report_data/
+    ├── src/
+    │   ├── main.py
+    │   ├── data_cleaning.py
+    │   └── ...
+    ├── eda.ipynb
+    ├── README.md
+    ├── requirements.txt
+    └── run.sh
+
 ### How to run the code
 
 To run the code
