@@ -1,2 +1,6 @@
 # Ignore the .db file
 end-to-end-project_rainfall_prediction/data/fishing.db
+# Ignore the data files
+assignments/hdb_price_prediction/data/cleaned_for_modeling.csv
+assignments/hdb_price_prediction/data/cleaned.csv
+assignments/hdb_price_prediction/data/train.csv
