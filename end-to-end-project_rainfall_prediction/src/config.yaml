@@ -1,0 +1,56 @@
+input_data:
+    database_path: './data/fishing.db'
+    table_name: 'fishing'
+
+features:
+    numeric_features: ['Rainfall', 'Evaporation', 'Sunshine', 'WindGustSpeed', 
+                      'WindSpeed9am', 'WindSpeed3pm', 'Humidity9am', 'Humidity3pm', 'Cloud9am', 'Cloud3pm',
+                      'AverageTemp', 'Month', 'Week']
+    categorical_features: ['Location', 'WindGustDir', 'WindDir9am', 'WindDir3pm',
+                          'RainToday']
+    ordinal_features:
+        Pressure9am: [Null, 'LOW','MED','HIGH']
+        Pressure3pm: [Null, 'LOW','MED','HIGH']
+    target: 'RainTomorrow'
+
+data_preparation:
+    test_size: 0.25
+    random_state: 49
+
+algorithms:
+    LogisticRegression:
+        to_run : True
+        init_parameters:
+            solver: 'saga'
+            max_iter:  500
+        param_grid:
+            penalty: ['l1', 'l2']
+            C: [0.001, 0.01, 0.1, 1, 10, 100]
+
+    RandomForest:
+        to_run : True
+        init_parameters: Null
+        param_grid:
+            n_estimators: [100, 200, 300]
+            max_depth: [10, 25]
+    
+    XGBoost:
+        to_run : True
+        init_parameters: Null
+        param_grid:
+            learning_rate: [0.01, 0.1]
+            max_depth: [3, 5, 7, 9]
+            n_estimators: [50, 100, 200, 300]
+            subsample: [0.5, 0.8, 1]
+            
+    KNNeighbors:
+        to_run : True
+        init_parameters:
+            weights : 'distance'
+        param_grid:
+            n_neighbors: [4, 8, 10] 
+           
+
+output:
+    folder_name : "output"
+        
