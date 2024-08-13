@@ -119,18 +119,8 @@ Figure: ROC curve for RandomForest algorithm. </br>
 
 The folder structure is shown as below.</br>
 
-d-----.github </br>
-d-----data </br>
-d-----env </br>
-d-----output </br>
-d-----report_data </br>
-d-----src  (python files constituting the end-to-end ML pipeline in .py format) </br>
--a----eda.ipynb </br>
--a----README.md </br>
--a----requirements.txt </br>
--a----run.sh  </br> 
 
-    my-datascience-projects/
+    end-to-end-project_rainfall_prediction/
     ├── .github/
     ├── data/
     ├── env/
