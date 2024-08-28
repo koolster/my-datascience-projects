@@ -1,0 +1,44 @@
+# Python-related
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Project-specific
+pdf_documents/
+*.pdf
+
+# Credentials and Secrets
+.env
+
+# LangChain and Chroma related
+.chroma/
+*.sqlite
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Virtual environment
+.venv/

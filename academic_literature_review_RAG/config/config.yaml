@@ -1,0 +1,5 @@
+pdf_folder: "./pdf_documents"
+chunk_size: 1000
+chunk_overlap: 200
+model_name: "gpt-4o-mini-2024-07-18"
+server_port: 7860
