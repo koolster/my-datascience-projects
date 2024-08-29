@@ -4,7 +4,7 @@ Welcome to my data science portfolio!
 
 ## Portfolio Highlights
 
-1. **Academic Literature Review RAG (Retrieval-Augmented Generation)**
+1. **Academic Literature Review RAG (Retrieval-Augmented Generation) with Langchain**
    - Description: A chatbot that uses RAG techniques to answer questions based on academic literature. It processes PDF documents, creates a vector store for efficient retrieval, and uses OpenAI's language models to generate responses with source references.
 
 2. **End-to-End Rainfall Prediction Project**
